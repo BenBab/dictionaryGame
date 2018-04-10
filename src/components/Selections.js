@@ -9,15 +9,16 @@ class Selections extends Component {
     constructor(props){
         super(props);
 
-        this.handleSelection = this.handleSelection.bind(this)
+       
     }
  
-  handleSelection(event) {
+  handleSelection = (event) => {
+    event.preventDefault()
     const value = event.target.value;
     const wordNum = event.target.id
     // console.log(value)
     // console.log(wordNum)
-    setSelection(wordNum, value)
+    this.props.setSelection(wordNum, value)
   };
 
   dictionaryList() {

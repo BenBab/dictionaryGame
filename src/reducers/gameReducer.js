@@ -7,7 +7,6 @@ const initialState = {
 
 };
 
-
 export default function (state = initialState, action){
     const { type, wordNum, selection } = action;
     debugger;
