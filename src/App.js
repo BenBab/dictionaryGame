@@ -23,7 +23,7 @@ const App = () => (
             <div className ="App">
                 <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">Welcome to the Movivo dictionary game</h1>
+                <h1 className="App-title">Welcome to the Redux dictionary game</h1>
                 </header>
                 <p className="App-intro">
                     Select a start word and see how many steps it would take to reach the
@@ -32,6 +32,7 @@ const App = () => (
                 <Selections/>
                 <br />
                 <Result/>
+                <br/>
                 <Toggle/>
             </div>
         </Provider>

@@ -2,16 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { dictionaryGame } from '../functions/dictionaryFunc';
 import { setSelection } from '../actions/selectionsActions';
 
 class Selections extends Component {
-    constructor(props){
-        super(props);
-
-       
-    }
- 
   handleSelection = (event) => {
     event.preventDefault()
     const value = event.target.value;
@@ -40,7 +33,7 @@ class Selections extends Component {
           <select
             className="dropdown"
             id="wordOne"
-            value={this.props.wordTwo}
+            value={this.props.wordOne}
             //onChange={event => this.setState({ start: event.target.value })}
             onChange={this.handleSelection}
           >
